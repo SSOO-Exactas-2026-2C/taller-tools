@@ -16,10 +16,6 @@ Este archivo es el mismo para todos los talleres de la materia: acá está el
 entorno, y el enunciado y los comandos de cada ejercicio están en el `README.md`
 del taller que estés haciendo.
 
-> Vive en el repo [taller-tools](https://github.com/SSOO-Exactas-2026-2C/taller-tools),
-> junto con los scripts de la VM. La primera vez que corrés `make`, el taller se
-> lo baja solo a su carpeta `tools/`. No hace falta que hagas nada.
-
 ---
 
 ## Setup
@@ -29,16 +25,22 @@ del taller que estés haciendo.
 **Linux (Debian / Ubuntu)**
 
 ```bash
-sudo apt install make qemu-system-x86 qemu-utils xorriso openssh-client curl
+sudo apt install git make qemu-system-x86 qemu-utils xorriso openssh-client curl
 ```
 
 **macOS**
+
+Si no tenés Homebrew, instalalo desde [brew.sh](https://brew.sh).
 
 ```bash
 brew install qemu
 ```
 
-Si no tenés Homebrew, instalalo desde [brew.sh](https://brew.sh).
+Si no tenés `git` o `make`:
+
+```bash
+xcode-select --install    # trae git y make
+```
 
 **Windows**
 
