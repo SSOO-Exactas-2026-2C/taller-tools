@@ -1,5 +1,8 @@
 # taller-tools
 
+> Si sos alumnx, probablemente querés leer [VM.md](./VM.md) y el `README.md` dentro
+> del taller que estás haciendo.
+
 Herramientas compartidas por todos los talleres de Sistemas Operativos (FCEyN / UBA).
 
 **Este repo no se clona a mano.** Cada taller se lo baja solo a su carpeta
