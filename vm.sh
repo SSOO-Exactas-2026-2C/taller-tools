@@ -223,7 +223,7 @@ EOF
             elif command -v dnf >/dev/null 2>&1; then
                 cmd="sudo dnf install -y qemu-system-x86 qemu-img xorriso openssh-clients curl"
             elif command -v pacman >/dev/null 2>&1; then
-                cmd="sudo pacman -S --needed qemu-system-x86 xorriso openssh curl"
+                cmd="sudo pacman -S --needed qemu-img qemu-system-x86 xorriso openssh curl"
             else
                 cat >&2 <<'EOF'
 
