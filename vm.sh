@@ -509,7 +509,7 @@ provision_base() {
 
     info "Verificando las herramientas adentro de la VM..."
     local tool missing_tools=""
-    for tool in gcc strace nm make setsid timeout pkill python3 lsof nc; do
+    for tool in gcc g++ strace nm make setsid timeout pkill python3 lsof nc; do
         # shellcheck disable=SC2046
         ssh -n $(ssh_opts) "$GUEST_USER@127.0.0.1" "command -v $tool >/dev/null" \
             || missing_tools="$missing_tools $tool"

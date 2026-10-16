@@ -57,8 +57,9 @@ swap:
 # tendria cuando el alumno arranco por otro.
 package_update: true
 packages:
-  # Para compilar y correr los ejercicios.
+  # Para compilar y correr los ejercicios (g++: taller de filesystem).
   - gcc
+  - g++
   - libc6-dev
   - make
   - python3

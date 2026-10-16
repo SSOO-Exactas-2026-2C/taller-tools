@@ -116,6 +116,21 @@ puerto libre. Podés ver cuál usa con `make vm-status`.
 
 **Quiero borrar absolutamente todo, imagen incluida.** `make purge-vm`.
 
+**Un taller necesita una herramienta que mi VM no tiene.** Las herramientas
+se instalan una sola vez, cuando `make install` prepara la imagen base. Si un
+taller nuevo agrega alguna, hay que recrear la imagen desde cero, parado en la
+carpeta de ese taller:
+
+```
+make update-tools
+make purge-vm
+make install
+```
+
+Tu código no se toca: vive en la carpeta del taller, no en la VM. Los talleres
+anteriores quedan apuntando a la imagen vieja; si volvés a alguno, corré
+`make clean-vm` ahí antes de usarlo.
+
 **Edito en mi máquina, ¿la VM ve los cambios?** Sí, es la misma
 carpeta, compartida entre tu máquina y la VM. No hace falta copiar nada ni
 reiniciar nada.
